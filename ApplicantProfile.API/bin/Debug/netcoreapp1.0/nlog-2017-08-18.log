@@ -1,0 +1,28 @@
+2017-08-18 09:18:23.0141|INFO|Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Genders] AS [g])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-08-18 09:18:23.1986|INFO|Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Genders] AS [g])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2017-08-18 09:18:23.7610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:49007/  
+2017-08-18 09:18:23.7610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:49007/  0
+2017-08-18 09:18:23.8790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 148.4504ms 200 
+2017-08-18 09:18:24.3273|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 628.8108ms 404 
+2017-08-18 09:18:33.0403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:49007/api/location/2 application/json-patch+json 57
+2017-08-18 09:18:34.0555|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method ApplicantProfile.API.Controllers.LocationController.UpdateLocation (ApplicantProfile.API) with arguments (2, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[ApplicantProfile.API.ViewModels.LocationUpdateDto]) - ModelState is Valid
+2017-08-18 09:18:35.0496|INFO|Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommandBuilderFactory|Executed DbCommand (23ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[AddedDate], [x].[ModifiedDate], [x].[Name]
+FROM [Locations] AS [x]
+WHERE [x].[Id] = @__id_0
+2017-08-18 09:18:35.1636|ERROR|ApplicantProfile.API.Controllers.LocationController|log information by logger
+2017-08-18 09:18:35.4449|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-08-18 09:18:35.5996|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action ApplicantProfile.API.Controllers.LocationController.UpdateLocation (ApplicantProfile.API) in 2420.2172ms
+2017-08-18 09:18:35.6096|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2573.042ms 422 application/json; charset=utf-8
