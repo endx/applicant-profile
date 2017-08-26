@@ -1,0 +1,4 @@
+#:C:\dev\ApplicantProfile\ApplicantProfile.API\ApplicantProfile.API.xproj
+C:\dev\ApplicantProfile\ApplicantProfile.API\ApplicantProfile.API.xproj|C:\dev\ApplicantProfile\ApplicantProfile.Model\ApplicantProfile.Model.xproj
+C:\dev\ApplicantProfile\ApplicantProfile.API\ApplicantProfile.API.xproj|C:\dev\ApplicantProfile\ApplicantProfile.Data\ApplicantProfile.Data.xproj
+C:\dev\ApplicantProfile\ApplicantProfile.Data\ApplicantProfile.Data.xproj|C:\dev\ApplicantProfile\ApplicantProfile.Model\ApplicantProfile.Model.xproj
